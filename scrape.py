@@ -21,7 +21,7 @@ def get_soup(search_term, start):
 
 
 def check_anchor(href, site, start):
-    if href == site:
+    if href.startswith(site):
         if start == 0:
             start = 1
         else:
