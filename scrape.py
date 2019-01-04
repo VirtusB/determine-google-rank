@@ -50,7 +50,7 @@ def start_scraping(search_term, start, site):
                 check_anchor(anchor['href'], site, start)
 
     if len(results) == 0:
-        print("Your search was not found")
+        sys.exit("Your search was not found")
 
     if len(results) != 0:
         print("Sleeping 15 seconds")
